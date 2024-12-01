@@ -1,0 +1,284 @@
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~ (main)
+$ pwd
+/c/Users/Dylan Cadena V
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~ (main)
+$ c
+bash: c: command not found
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~ (main)
+$ mkdir Github
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~ (main)
+$ cd Github
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ mkdir primeros_pasos
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ cd primeros_pasos/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git config --global user.name DylanCadena64
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git config --global user.email dylan.cadena@epn.edu.ec
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git init
+Initialized empty Git repository in C:/Users/Dylan Cadena V/Github/primeros_pasos/.git/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Archivo1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git add Archivo1.txt
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Archivo1.txt
+
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git commit -m "my first commit"
+[main (root-commit) aca31a2] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Archivo1.txt
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git remote add origin https://github.com/DylanCadena64/primeros_pasos
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git remote -v
+origin  https://github.com/DylanCadena64/primeros_pasos (fetch)
+origin  https://github.com/DylanCadena64/primeros_pasos (push)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DylanCadena64/primeros_pasos
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ ls
+Archivo1.txt
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ cd . .
+bash: cd: too many arguments
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ cd . .
+bash: cd: too many arguments
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ cd..
+bash: cd..: command not found
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/primeros_pasos (main)
+$ cd ..
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ ls
+primeros_pasos/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ git clone https://github.com/richardriverag/Lab_Git_GitHub24B
+Cloning into 'Lab_Git_GitHub24B'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Total 10 (delta 1), reused 1 (delta 1), pack-reused 8 (from 1)
+Receiving objects: 100% (10/10), 6.87 KiB | 2.29 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ ls
+Lab_Git_GitHub24B/  primeros_pasos/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ cd Lab_Git_GitHub24B/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git remote -v
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (fetch)
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (push)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git remote add upstream https://github.com/DylanCadena64/Lab_Git_GitHub24B
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git remote -v
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (fetch)
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (push)
+upstream        https://github.com/DylanCadena64/Lab_Git_GitHub24B (fetch)
+upstream        https://github.com/DylanCadena64/Lab_Git_GitHub24B (push)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git fetch --all
+Fetching origin
+Fetching upstream
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 3 (from 1)
+Unpacking objects: 100% (4/4), 435 bytes | 31.00 KiB/s, done.
+From https://github.com/DylanCadena64/Lab_Git_GitHub24B
+ * [new branch]      main       -> upstream/main
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ mkdir ejercicio_DylanCadena64
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ cp ..
+cp: missing destination file operand after '..'
+Try 'cp --help' for more information.
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ cd ..
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github (main)
+$ cd Lab_Git_GitHub24B/
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ ls
+LICENSE  README.md  ejercicio_DylanCadena64/  estilos_de_documentacion.md
+
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ejercicio_DylanCadena64/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git add ejercicio_DylanCadena64/
+warning: adding embedded git repository: ejercicio_DylanCadena64/primeros_pasos
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> ejercicio_DylanCadena64/primeros_pasos
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached ejercicio_DylanCadena64/primeros_pasos
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git commit -m "Added Ejercicio Dylan Cadena"
+[main 0cfe6d6] Added Ejercicio Dylan Cadena
+ 1 file changed, 1 insertion(+)
+ create mode 160000 ejercicio_DylanCadena64/primeros_pasos
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git remote -v
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (fetch)
+origin  https://github.com/richardriverag/Lab_Git_GitHub24B (push)
+upstream        https://github.com/DylanCadena64/Lab_Git_GitHub24B (fetch)
+upstream        https://github.com/DylanCadena64/Lab_Git_GitHub24B (push)
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git push upstream DylanCadena64
+error: src refspec DylanCadena64 does not match any
+error: failed to push some refs to 'https://github.com/DylanCadena64/Lab_Git_GitHub24B'
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git checkout DylanCadena64
+error: pathspec 'DylanCadena64' did not match any file(s) known to git
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git checkout DylanCadena64
+error: pathspec 'DylanCadena64' did not match any file(s) known to git
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git checkout DylanCadena64
+error: pathspec 'DylanCadena64' did not match any file(s) known to git
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git statues
+git: 'statues' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git branch
+* main
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (main)
+$ git checkout -b DylanCadena64
+Switched to a new branch 'DylanCadena64'
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (DylanCadena64)
+$ git status
+On branch DylanCadena64
+nothing to commit, working tree clean
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (DylanCadena64)
+$ git push upstream DylanCadena64
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 427 bytes | 427.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'DylanCadena64' on GitHub by visiting:
+remote:      https://github.com/DylanCadena64/Lab_Git_GitHub24B/pull/new/DylanCadena64
+remote:
+To https://github.com/DylanCadena64/Lab_Git_GitHub24B
+ * [new branch]      DylanCadena64 -> DylanCadena64
+
+Dylan Cadena V@DESKTOP-9BJI5KL MINGW64 ~/Github/Lab_Git_GitHub24B (DylanCadena64)
+$
